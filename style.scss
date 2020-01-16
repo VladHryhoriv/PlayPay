@@ -1,0 +1,199 @@
+body{
+    background: url(img/Background.png) no-repeat;
+    padding: 0;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-size: cover;
+}
+html,body,.wrapper{
+    height: 100%;
+}
+.wrapper{
+    font-family: 'Verdana', sans-serif ;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    header{
+        background:white;
+        display: flex;
+        padding-top: 25px;
+        padding-left:100px;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 20px;
+        .menu{
+            width: 30%;
+             nav {
+                 width: 100%;
+                display: flex;
+                justify-content: space-between;
+                .items a{
+                    font-size: 24px;
+                    font-weight: 400;
+                    text-decoration: none;
+                    color: #000;
+                }
+            }
+        }
+    }
+    .main{
+        width: 100%;
+        max-width: 975px;
+        margin: 90px auto;
+        text-align: center;
+        padding: 30px 50px 15px 30px;
+        
+        background: rgba($color: #ffffff, $alpha: 0.6);
+        border: #ABB8C8 solid 1px;
+        border-radius: 10px;
+        .exchange{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-bottom: 30px;
+            .block-1 ,.block-3 {
+                width: 30%;
+                text-align: left;
+            }
+            .logo-banc{
+                padding-bottom: 20px;
+            }
+            .number{
+                font-size: 18px;
+                font-weight: 400;
+                padding-bottom: 10px;
+            }
+            .give ,.take{
+                font-weight: 400;
+                font-size: 24px;
+                border-bottom: #E1E2E3 solid 1px;
+                width: 100%;
+                margin-bottom: 35px;
+            }
+            .take{
+                margin-bottom: 40px;
+            }
+            .sum,.accrued{
+                padding: 20px 0 10px 0;
+                font-size: 18px;
+            }
+            .uan ,.usd{
+                background-color: #FFF0A6;
+            }
+            .uan,.rub,.usd{
+                border: #000 solid 1px;
+                cursor: pointer;
+            }
+            .yewllow{
+                background: #FFF0A6;
+            }
+            .white{
+                background: white;
+            }
+            .two-inp{
+                margin-bottom: 20px;
+            }
+             
+        }
+        .kyrc{
+            .kyrc-now{
+                font-size: 18px;
+                font-weight: 400;
+            }
+            .comisin{
+                font-weight: 400;
+                font-size: 14px;
+                color: #8E8D88;
+            }
+        }
+        .but-trade{
+            background-color: #3374E0;
+            display: flex;
+            border: none;
+            border-radius: 3px;
+            align-items: center;
+            width: 280px;
+            justify-content: center;
+            margin: 0 auto;
+            margin-top: 10px;
+            color: white;
+            height: 60px;
+            cursor: pointer;
+            .trading{
+                font-size: 30px;
+            }
+            img{
+                margin-right: 10px;
+            }
+        }
+        input{
+            height: 35px;
+            width: 240px;
+            font-size: 18px;
+        }
+    }
+    footer{
+            background: rgba($color: #414141, $alpha: 0.6);
+            text-align: center;
+            padding-top: 10px;
+            flex: 1 0 auto;
+        .foot{
+            color: white;
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+}
+@media screen and (max-width:1200px){
+    .wrapper header .menu {
+        width: 50%;
+        nav{
+            justify-content: space-between;
+        }
+    }
+}
+@media screen and (max-width:768px){
+    .wrapper {
+        header{
+            display: block;
+            text-align: center;
+            .menu{
+                width: 100%;
+            }
+        }
+        .main{
+            .exchange{
+                display: block;
+                width: 100%;
+                text-align: center;
+                .block-1,.block-3{
+                    width: 100%;
+                    text-align: center;
+                }
+                .block-2{
+                    margin: 50px 0;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:490px){
+    .wrapper header{
+        padding: 0;
+    }
+    .wrapper header .menu nav{
+        display: block;
+        .items{
+            padding: 10px 0;
+        }
+    }
+}
+@media screen and (max-width:320px){
+    .wrapper header .logo img{
+        width: 250px;
+    }
+    .wrapper .main{
+        padding: 0;
+    }
+}
