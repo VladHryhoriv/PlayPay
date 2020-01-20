@@ -50,7 +50,7 @@ html,body,.wrapper{
         margin: 90px auto;
         text-align: center;
         padding: 30px 50px 15px 30px;
-        flex: 0 0 auto;
+        flex: 1 0 auto;
         background: rgba($color: #ffffff, $alpha: 0.6);
         border: #ABB8C8 solid 1px;
         border-radius: 10px;
@@ -128,8 +128,18 @@ html,body,.wrapper{
             height: 60px;
             cursor: pointer;
             font-size: 30px;
+            position: relative;
             img{
                 margin-right: 10px;
+            }
+            span::before{
+                content: url(img/arrows.png);
+                // background: url('img/arrows.png');
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                top: 25%;
+                left: 13%;
             }
         }
         input{
@@ -151,7 +161,7 @@ html,body,.wrapper{
     }
 }
 @media screen and (max-width:1200px){
-    .wrapper header .menu {
+    .wrapper header .wrapper-header .menu {
         width: 50%;
         nav{
             justify-content: space-between;
@@ -160,7 +170,7 @@ html,body,.wrapper{
 }
 @media screen and (max-width:768px){
     .wrapper {
-        header{
+        header .wrapper-header{
             display: block;
             text-align: center;
             .menu{
@@ -187,7 +197,7 @@ html,body,.wrapper{
     .wrapper header{
         padding: 0;
     }
-    .wrapper header .menu nav{
+    .wrapper header .wrapper-header .menu nav{
         display: block;
         .items{
             padding: 10px 0;
@@ -195,7 +205,7 @@ html,body,.wrapper{
     }
 }
 @media screen and (max-width:320px){
-    .wrapper header .logo img{
+    .wrapper header .wrapper-header .logo img{
         width: 250px;
     }
     .wrapper .main{

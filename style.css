@@ -79,9 +79,9 @@ html, body, .wrapper {
   margin: 90px auto;
   text-align: center;
   padding: 30px 50px 15px 30px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
   background: rgba(255, 255, 255, 0.6);
   border: #ABB8C8 solid 1px;
   border-radius: 10px;
@@ -183,10 +183,20 @@ html, body, .wrapper {
   height: 60px;
   cursor: pointer;
   font-size: 30px;
+  position: relative;
 }
 
 .wrapper .main .but-trade img {
   margin-right: 10px;
+}
+
+.wrapper .main .but-trade span::before {
+  content: url(img/arrows.png);
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 25%;
+  left: 13%;
 }
 
 .wrapper .main input {
@@ -211,10 +221,10 @@ html, body, .wrapper {
 }
 
 @media screen and (max-width: 1200px) {
-  .wrapper header .menu {
+  .wrapper header .wrapper-header .menu {
     width: 50%;
   }
-  .wrapper header .menu nav {
+  .wrapper header .wrapper-header .menu nav {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -222,11 +232,11 @@ html, body, .wrapper {
 }
 
 @media screen and (max-width: 768px) {
-  .wrapper header {
+  .wrapper header .wrapper-header {
     display: block;
     text-align: center;
   }
-  .wrapper header .menu {
+  .wrapper header .wrapper-header .menu {
     width: 100%;
   }
   .wrapper .main .exchange {
@@ -247,16 +257,16 @@ html, body, .wrapper {
   .wrapper header {
     padding: 0;
   }
-  .wrapper header .menu nav {
+  .wrapper header .wrapper-header .menu nav {
     display: block;
   }
-  .wrapper header .menu nav .items {
+  .wrapper header .wrapper-header .menu nav .items {
     padding: 10px 0;
   }
 }
 
 @media screen and (max-width: 320px) {
-  .wrapper header .logo img {
+  .wrapper header .wrapper-header .logo img {
     width: 250px;
   }
   .wrapper .main {
