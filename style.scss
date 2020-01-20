@@ -43,7 +43,7 @@ html,body,.wrapper{
         margin: 90px auto;
         text-align: center;
         padding: 30px 50px 15px 30px;
-        
+        flex: 1 0 auto;
         background: rgba($color: #ffffff, $alpha: 0.6);
         border: #ABB8C8 solid 1px;
         border-radius: 10px;
@@ -120,9 +120,7 @@ html,body,.wrapper{
             color: white;
             height: 60px;
             cursor: pointer;
-            .trading{
-                font-size: 30px;
-            }
+            font-size: 30px;
             img{
                 margin-right: 10px;
             }
@@ -137,7 +135,7 @@ html,body,.wrapper{
             background: rgba($color: #414141, $alpha: 0.6);
             text-align: center;
             padding-top: 10px;
-            flex: 1 0 auto;
+            flex: 0 0 auto;
         .foot{
             color: white;
             font-size: 14px;
