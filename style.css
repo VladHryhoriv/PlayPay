@@ -79,9 +79,9 @@ html, body, .wrapper {
   margin: 90px auto;
   text-align: center;
   padding: 30px 50px 15px 30px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
   background: rgba(255, 255, 255, 0.6);
   border: #ABB8C8 solid 1px;
   border-radius: 10px;
@@ -129,10 +129,6 @@ html, body, .wrapper {
 .wrapper .main .exchange .sum, .wrapper .main .exchange .accrued {
   padding: 20px 0 10px 0;
   font-size: 18px;
-}
-
-.wrapper .main .exchange .uan, .wrapper .main .exchange .usd {
-  background-color: #FFF0A6;
 }
 
 .wrapper .main .exchange .uan, .wrapper .main .exchange .rub, .wrapper .main .exchange .usd {

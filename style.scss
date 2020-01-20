@@ -50,7 +50,7 @@ html,body,.wrapper{
         margin: 90px auto;
         text-align: center;
         padding: 30px 50px 15px 30px;
-        flex: 0 0 auto;
+        flex: 1 0 auto;
         background: rgba($color: #ffffff, $alpha: 0.6);
         border: #ABB8C8 solid 1px;
         border-radius: 10px;
@@ -85,9 +85,9 @@ html,body,.wrapper{
                 padding: 20px 0 10px 0;
                 font-size: 18px;
             }
-            .uan ,.usd{
-                background-color: #FFF0A6;
-            }
+            // .uan ,.usd{
+            //     background-color: #FFF0A6;
+            // }
             .uan,.rub,.usd{
                 border: #000 solid 1px;
                 cursor: pointer;
