@@ -131,10 +131,6 @@ html, body, .wrapper {
   font-size: 18px;
 }
 
-.wrapper .main .exchange .uan, .wrapper .main .exchange .usd {
-  background-color: #FFF0A6;
-}
-
 .wrapper .main .exchange .uan, .wrapper .main .exchange .rub, .wrapper .main .exchange .usd {
   border: #000 solid 1px;
   cursor: pointer;
