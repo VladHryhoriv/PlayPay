@@ -46,14 +46,20 @@ html,body,.wrapper{
     }
     .main{
         width: 100%;
-        max-width: 975px;
-        margin: 90px auto;
-        text-align: center;
-        padding: 30px 50px 15px 30px;
         flex: 1 0 auto;
-        background: rgba($color: #ffffff, $alpha: 0.6);
-        border: #ABB8C8 solid 1px;
-        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .wrapper-main{
+            width: 100%;
+            max-width: 975px;
+            border-radius: 10px;
+            background: rgba($color: #ffffff, $alpha: 0.6);
+            border: #ABB8C8 solid 1px;
+            padding: 30px 50px 15px 30px;
+            text-align: center;
+            position: relative;
+        }
         .exchange{
             display: flex;
             justify-content: space-around;
@@ -65,6 +71,18 @@ html,body,.wrapper{
             }
             .logo-banc{
                 padding-bottom: 20px;
+            }
+            #usd , #rub{
+                position: absolute;
+                opacity: 0;
+                cursor: default;
+                z-index: -10;
+            }
+            #usd:checked + .usd{
+                background: #FFF0A6;
+            }
+            #rub:checked + .rub{
+                background: #FFF0A6;
             }
             .number{
                 font-size: 18px;
@@ -85,11 +103,14 @@ html,body,.wrapper{
                 padding: 20px 0 10px 0;
                 font-size: 18px;
             }
-            // .uan ,.usd{
-            //     background-color: #FFF0A6;
-            // }
+            .uan{
+                background-color: #FFF0A6;
+            }
             .uan,.rub,.usd{
                 border: #000 solid 1px;
+                cursor: pointer;
+            }
+            label{
                 cursor: pointer;
             }
             .yewllow{

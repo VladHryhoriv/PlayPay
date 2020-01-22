@@ -75,16 +75,29 @@ html, body, .wrapper {
 
 .wrapper .main {
   width: 100%;
-  max-width: 975px;
-  margin: 90px auto;
-  text-align: center;
-  padding: 30px 50px 15px 30px;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper .main .wrapper-main {
+  width: 100%;
+  max-width: 975px;
+  border-radius: 10px;
   background: rgba(255, 255, 255, 0.6);
   border: #ABB8C8 solid 1px;
-  border-radius: 10px;
+  padding: 30px 50px 15px 30px;
+  text-align: center;
+  position: relative;
 }
 
 .wrapper .main .exchange {
@@ -106,6 +119,21 @@ html, body, .wrapper {
 
 .wrapper .main .exchange .logo-banc {
   padding-bottom: 20px;
+}
+
+.wrapper .main .exchange #usd, .wrapper .main .exchange #rub {
+  position: absolute;
+  opacity: 0;
+  cursor: default;
+  z-index: -10;
+}
+
+.wrapper .main .exchange #usd:checked + .usd {
+  background: #FFF0A6;
+}
+
+.wrapper .main .exchange #rub:checked + .rub {
+  background: #FFF0A6;
 }
 
 .wrapper .main .exchange .number {
@@ -131,8 +159,16 @@ html, body, .wrapper {
   font-size: 18px;
 }
 
+.wrapper .main .exchange .uan {
+  background-color: #FFF0A6;
+}
+
 .wrapper .main .exchange .uan, .wrapper .main .exchange .rub, .wrapper .main .exchange .usd {
   border: #000 solid 1px;
+  cursor: pointer;
+}
+
+.wrapper .main .exchange label {
   cursor: pointer;
 }
 
